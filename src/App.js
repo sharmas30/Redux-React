@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import HomeContainer from './containers/HomeComponent'
+
 
 function App() {
   return (
     <div className="App">
-      <h2>Hello shubh</h2>
+      <HomeContainer />
     </div>
   );
 }
