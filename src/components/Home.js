@@ -1,12 +1,10 @@
 import React from 'react'
 
-const Home = () => {
+const Home = (props) => {
+    console.log("HOME__",props)
     return (
         <>
             <div>
-                <div className="add_to_cart">
-                    <img src="https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG15.png" alt=""/>
-                </div>
                 <h2>Home Component</h2>
                 <div className="cart-wrapper">
                     <div className="img-wrapper item">
@@ -17,7 +15,16 @@ const Home = () => {
                         <span>Price: Rs.77,000</span>
                     </div>
                     <div className="button-wrapper item">
-                        <button>Add To Cart</button>
+                        <button onClick={() => {
+                            props.addToCartHandler({
+                                name: "Mobile",
+                                price: 7777
+                            })
+                        }}>Add To Cart</button>
+
+                        <button className="remove-cart-btn" onClick={() => {
+                            props.removeToCartHandler()
+                        }}>Remove To Cart</button>
                     </div>
                 </div>
             </div>

@@ -1,11 +1,12 @@
 import './App.css';
 import React from 'react'
 import HomeContainer from './containers/HomeComponent'
-
+import HeaderContainer from './containers/HeaderContainer';
 
 function App() {
   return (
     <div className="App">
+      <HeaderContainer />
       <HomeContainer />
     </div>
   );

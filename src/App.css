@@ -27,15 +27,20 @@
 }
 
 .button-wrapper button {
-    background-color: red;
+    background-color: rgb(71, 216, 27);
     border: 0px;
     border-radius: 4px;
     padding: 10px;
     color: #fff;
+    margin: 2px 5px;
 }
 
 button:hover {
     cursor: pointer;
+}
+
+button.remove-cart-btn {
+    background-color: rgb(224, 23, 23);
 }
 
 .img-wrapper img {
